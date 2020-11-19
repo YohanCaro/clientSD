@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="client.js"></script>
+</head>
+
+<body id="main">
+    <button onclick="getList()">Get</button>
+    <button id="buttonJquery">Get Jquery</button>
+    <div>
+        <form action="g" id="form">
+            <label for="">Nombre</label>
+            <input type="text-name" name="name" id="name">
+            <label for="">Tipo de documento</label>
+            <select name="sekec" id="type-doc">
+                <option value="cedula">Cedula</option>
+                <option value="ti">Tarjeta de Identidad</option>
+                <option value="te">Pasaporte</option>
+            </select>
+            <label for="">Documento</label>
+            <input type="text-doc" name="doc" id="doc">
+            <label for="">Profesión</label>
+            <input type="text-pro" name="pro" id="pro">
+            <label for="">Fecha de nacimiento</label>
+            <input type="text-bithday" name="day">
+        </form>
+    </div>
+    <div>
+        <button onclick="sendInfo()">Send</button>
+    </div>
+</body>
+
+</html>
